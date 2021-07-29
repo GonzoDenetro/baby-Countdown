@@ -1,3 +1,8 @@
+:root {
+    --white: #f8f9fa;
+    --pinnk: #ffafcc;
+    --blue: #a2d2ff;
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +11,135 @@
 html {
     font-size: 62.5%;
 }
+section {
+    width: 100%;
+    background: #fff6f9;
+    position: relative;
+}
+.counter-container {
+    width: 100%;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .counter {
-    width: 70%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 40px auto;
     display: flex;
     justify-content: space-around;
+}
+.content-container {
+    text-align: center;
+    margin: 0 10px;
+}
+.title {
+    text-align: center;
+    font-size: 6rem;
+    letter-spacing: 2px;
+    color: var(--pinnk);
+    font-family: 'Style Script', cursive;
+}
+.time {
+    font-size: 8rem;
+    font-family: 'Style Script', cursive;;;
+}
+.blue {
+    color: var(--blue);
+}
+.pink {
+    color: var(--pinnk);
+}
+.text {
+    font-family: 'Style Script', cursive;
+    font-size: 2.4rem;
+}
+.days, 
+.minutes {
+    color: var(--pinnk);
+}
+.hours, .seconds {
+    color: var(--blue);
+}
+.icons-container {
+    width: 100%;
+    height: 60px;
+}
+span {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    display: inline-block;
+}
+.fa-cloud {
+    font-size: 90px;
+    
+    box-shadow: 0 0 black;
+}
+.box1 {
+    color: var(--pinnk);
+    position: absolute;
+    top: 12%;
+    left: 65%;
+    box-shadow: 0 0 black;
+}
+.box2 {
+    color: var(--blue);
+    position: absolute;
+    left: 5%;
+    top: 2%;
+}
+.box3 {
+    color: var(--blue);
+}
+.box3b {
+    position: absolute;
+    left: 45%;
+    top: 3%;
+}
+.box4b {
+    position: absolute;
+    left: 12%;
+    top: 14%;
+    color: var(--pinnk);
+}
+.box5 {
+    color: var(--blue);
+    position: absolute;
+    left: 35%;
+    top: 15%;
+}
+.box6 {
+    color: var(--pinnk);
+    position: absolute;
+    left: 25%;
+    top: 2%;
+}
+.box7 {
+    color: var(--pinnk);
+    position: absolute;
+    right: 10%;
+    top: 2%;
+}
+
+
+
+@media (max-width: 600px) {
+.title {
+    margin-top: 40px;
+}
+ .time {
+     font-size: 5rem;
+ }   
+ .text {
+     font-size: 2rem;
+ }
+ .fa-cloud {
+    font-size: 70px;
+}
+.box5, .box6, .box7 {
+    display: none;
+}
 }
